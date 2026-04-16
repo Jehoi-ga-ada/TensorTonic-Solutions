@@ -10,7 +10,7 @@ def expected_value_discrete(x, p):
 
     ev = np.sum(x*p)
     
-    if np.sum(p) <= 1-1e-7 or np.sum(p) >= 1+1e7:
+    if np.sum(p) <= 1-1e-7 or np.sum(p) >= 1+1e-7:
         raise ValueError("Probabilites must sum to 1")
         
     return ev 
